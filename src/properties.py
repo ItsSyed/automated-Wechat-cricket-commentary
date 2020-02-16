@@ -1,12 +1,12 @@
 # Non-MacOS users can change it to Chrome/Firefox.
 BROWSER = "Chrome" # can be Chrome/Safari/Firefox
-MATCH_URL = "http://www.espncricinfo.com/series/8039/commentary/1144506/afghanistan-vs-england-24th-match-icc-cricket-world-cup-2019"
-MESSAGE_BOX_CLASS_NAME = "_3u328"
-SEND_BUTTON_CLASS_NAME = "_3M-N-"
+MATCH_URL = "https://www.espncricinfo.com/series/19245/commentary/1201941/south-africa-women-vs-sri-lanka-women-sl-w-in-australia-2019-20"
+MESSAGE_BOX_CLASS_NAME = "content"
+SEND_BUTTON_CLASS_NAME = "action"
 
 # Match start timings according to where the script is being run.
-MATCH_START_HOURS = 13
-MATCH_START_MINUTES = 30
+MATCH_START_HOURS = 8
+MATCH_START_MINUTES = 43
 MATCH_END_HOURS = 23
 MATCH_END_MINUTES = 0
 SCRIPT_LOG_FILE_NAME = '../logs/script_logs.log'
