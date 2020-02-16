@@ -1,8 +1,6 @@
-# Automated Whatsapp Cricket Commentary
+# Automated Wechat Cricket Commentary
 
-A python script that fetches live cricket commentary for a Test/ODI(yet to test for T20, but should work the same) match from an ESPNCricInfo match link, and sends it to a contact on Whatsapp automatically, at regular intervals.
-
-`Update` : I've recently noticed that Whatsapp has started changing the ids of the message text-box and the submit button, so for now need to find the new ids from the source and add them to properties.py, but I might try to take that dependency out later on.
+A python script that fetches live cricket commentary for a Test/ODI(yet to test for T20, but should work the same) match from an ESPNCricInfo match link, and sends it to a contact on WeChat automatically, at regular intervals.
 
 ## Getting Started
 
@@ -10,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- You'll need to have a Whatsapp account(of course! 😛).
+- You'll need to have a Wechat account(of course! 😛).
 - You'll need to have an installation of Python installed on your system, download from [here](https://www.python.org/downloads/).
 - You'll also need to install the modules used in the script via pip3. These modules are mentioned in [requirements.txt](requirements.txt).
 To install all of them at once, open terminal, cd to the project directory and run the command -
@@ -26,9 +24,7 @@ aaaaaand you're good to go.
 - Change the MATCH_START_HOURS/MINUTES and MATCH_END_HOURS/MINUTES as per the time of your system.
 - Then, open terminal, cd to the project folder and run the command -
 `python3 automator.py`
-- A new browser window will open with web-whatsapp open in it. Scan the QR code on the page through your mobile(make sure your phone is connected to the internet the whole time) -
-iOS : Whatsapp -> Settings -> Whatsapp Web/Desktop -> Scan QR Code
-Android : Whatsapp -> Settings -> Whatsapp Web -> +
+- A new browser window will open with web-WeChat open in it. Scan the QR code on the page through your mobile(make sure your phone is connected to the internet the whole time) -
 - Wait until all the contacts have loaded on the webpage, then go back to the terminal and write all contacts/group names(CASE SENSITIVE) in the terminal, and press ENTER.
 - And you're done! :D
 
