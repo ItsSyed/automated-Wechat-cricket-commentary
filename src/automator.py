@@ -179,6 +179,7 @@ def scheduled_job(driver, names):
         message_content = "No new updates right now..."
 
     try:
+
         for name in names:
             user = WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located(
@@ -207,6 +208,7 @@ def scheduled_job(driver, names):
             )
 
             LOGGER.debug("Send_button found!")
+            # on Mac it is command+Enter and windows ctrl+enter to send a message
             send_button.send_keys("\n")
             send_button.click()
     except (TimeoutException, WebDriverException) as e:
@@ -234,7 +236,7 @@ def start_commentary():
     match_end_time = current_time.replace(
         hour=properties.MATCH_END_HOURS, minute=properties.MATCH_END_MINUTES, second=0, microsecond=0)
     last_comment = Comment("None", "No comment yet...")
-    URL = "https://web.whatsapp.com"
+    URL = "https://web.wechat.com/?lang=en_US"
 
     if (properties.BROWSER.lower() == "safari"):
         driver = webdriver.Safari()
