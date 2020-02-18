@@ -1,8 +1,8 @@
 # Non-MacOS users can change it to Chrome/Firefox.
 BROWSER = "Chrome" # can be Chrome/Safari/Firefox
 MATCH_URL = "https://www.espncricinfo.com/series/19245/commentary/1201941/south-africa-women-vs-sri-lanka-women-sl-w-in-australia-2019-20"
-MESSAGE_BOX_CLASS_NAME = "content"
-SEND_BUTTON_CLASS_NAME = "action"
+MESSAGE_BOX_CLASS_NAME = "editArea"
+SEND_BUTTON_CLASS_NAME = "btn btn_send"
 
 # Match start timings according to where the script is being run.
 MATCH_START_HOURS = 8
